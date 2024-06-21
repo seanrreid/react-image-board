@@ -8,7 +8,7 @@ const ImageList = ({ images }) => {
                         <img
                             src={URL.createObjectURL(image)}
                             style={{ width: '100%' }}
-                            key={image}
+                            key={image.lastModified}
                         />
                     ))}
                 </div>
